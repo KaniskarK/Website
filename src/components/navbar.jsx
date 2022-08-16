@@ -4,13 +4,14 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-function NavScrollExample() {
+
+function CollapsibleExample() {
   return (
-    <Navbar bg="secondary" expand="lg">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container fluid>
-        <Navbar.Brand href="#">Sample</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Brand href="#"><h2>Logo</h2></Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
@@ -34,4 +35,4 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default CollapsibleExample;

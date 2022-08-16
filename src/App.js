@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavScrollExample from './components/navbar';
+import CollapsibleExample from './components/navbar';
 
 function App() {
   return (
     <div className="App">
-      <NavScrollExample/>
+      <CollapsibleExample/>
     </div>
   );
 }
